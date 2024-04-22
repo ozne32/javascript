@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+<script>
+    var bebado = prompt('O homem está bêbado ? (Y/N)')
+    var dirigindo=prompt('o homem está dirigindo ? (Y/N)')
+    if (bebado.toUpperCase()=='Y' && dirigindo.toUpperCase()=='Y'){
+        document.write('você está preso')
+    }else if ((bebado.toUpperCase()=='Y' && dirigindo.toUpperCase()=='N') || (bebado.toUpperCase()=='N' && dirigindo.toUpperCase()=='Y')
+     || (bebado.toUpperCase()=='N' && dirigindo.toUpperCase()=='N')){
+        document.write('pode passar')
+    }else{
+        alert('aperte ctrl + R e recomeça, esse programa só aceita Y e N como resposta')
+    }
+</script>
+<body>
+    
+</body>
+</html>
