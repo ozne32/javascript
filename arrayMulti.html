@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays multidimensionais</title>
+</head>
+<script>
+    //é possível armazenar arrays dentro de outros arrays
+    var livros = Array()
+    livros['terror'] = ['o corvo','o gato preto', 'as aventuras de tim tim']//aqui por exemplo o length vai retornar meio estranho
+    livros['ficção'] = ['o incrível mundo de gumball', 'vingadores','deadpool']
+    livros['aventura'] = ['hora de aventura','apenas um show','as aventuras dos que não foram']
+
+    //Importante destacar que eu consigo colocar o index(chave) cpom qualquer coisa, a,b,c. Porém se ele não 
+    //for colocado como 0,1,2,3,4 o length do array irá retornar meio estranho. Prestar bastante atenção à isso
+    console.log(livros)
+    document.write(livros['terror'][2])
+</script>
+<body>
+    
+</body>
+</html>

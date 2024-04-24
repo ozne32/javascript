@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio manipulação</title>
+</head>
+<script>
+    function acao(){
+        var valor= document.getElementById('caracter').value
+        document.getElementById('caracter').value = ''
+        valor.trim()
+        switch(valor){
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+                document.getElementById('nums').value += valor
+                break
+            default:
+                document.getElementById('letras').value +=valor
+                break
+        }
+    }
+</script>
+<body>
+    <span>digite os caracteres</span>
+    <input id="caracter" onkeyup="acao()" type="text"><br>
+    <span>números:</span>
+    <input id="nums" type="text" disabled="disabled" placeholder="números" >
+    <span>letras:</span>
+    <input id="letras" type="text" disabled="disabled" placeholder="letras">
+</body>
+</html>

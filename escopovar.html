@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo dos escopos de variáveis</title>
+</head>
+<script>
+    //escopo global, bloco e função
+    var serie ='friends'
+    if (true){
+        var serie2 = 'the last of us'//aqui o var está fazendo uma elevação de serie2, fazendo com que ela torne-se uma 
+        //variavel global.. hosting
+        document.write(serie)
+    }
+    document.write( '<br>')
+    document.write(serie2)
+    function pegarNumero(){
+        var nome3 = 'enzo'//aqui não ocorre o hosting
+        document.write(serie2)
+    }
+    pegarNumero()
+</script>
+<body>
+    
+</body>
+</html>

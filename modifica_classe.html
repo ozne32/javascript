@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>troca de estilos</title>
+</head>
+<style>
+    .estilo1{
+        background-color: red;
+        color: white;
+    }
+    .estilo2{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: aqua;
+        margin-bottom: 100px;
+    }
+</style>
+<script>
+    function modificaClasse(){
+        var nomeClasse = document.getElementById('mensagem').className
+        console.log(nomeClasse)
+        //daria para colocar esta funcionalidade para o usuário escolher o tema da página em que está
+        if (nomeClasse == 'estilo1'){
+            document.getElementById('mensagem').className='estilo2';//como pode-se ver este trecho do código apenas
+            //pega um elemento pelo id, e muda o nome da classe que está nele embutido, por meio do className.
+        }else if(nomeClasse == 'estilo2'){
+            document.getElementById('mensagem').className='estilo1';
+        }
+    }
+</script>
+<body>
+    <div id="mensagem" class="estilo1">
+        <h1>olha que legal!!</h1>
+    </div>
+    <button  onclick="modificaClasse()" type="button">clique para modificar a classe</button>
+</body>
+</html>

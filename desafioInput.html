@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafioInput</title>
+</head>
+<script>
+    function conferir(){
+        var caracteres = document.getElementById('formulario').value
+        if (caracteres.length < 3){
+            document.getElementById('formulario').style.backgroundColor = 'red'
+        }else if (caracteres.length >= 3){
+            document.getElementById('formulario').style.backgroundColor = 'green'
+        }
+    }
+    function modificar(){
+        var caracteres = document.getElementById('formulario').value
+        if (caracteres.length ==0){
+            document.getElementById('formulario').style.backgroundColor = 'yellow'
+        }
+    }
+</script>
+<body>
+    <input id="formulario" type="text" placeholder="digite o que quiser" onfocus="modificar()" onkeyup="conferir()">
+</body>
+</html>

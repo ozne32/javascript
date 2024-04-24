@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teclado</title>
+</head>
+<script>
+    function acao1(){
+        alert('você apertou o botão')
+    }
+    function acao2(){
+        alert('você apertou um botão que é um caracter válido')
+    }
+</script>
+<body>
+    <input onkeydown="acao1()" type="text">
+    <input onkeypress="acao2()" type="text">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<script>
+    function exibeTexto(id, callbackSucesso, callbackErro){
+        if(false){
+            callbackSucesso('3 carneiros', '3 carneiros andavam na rua nesta manhã ensolarada')
+        }else{
+            callbackErro('erro ao recuperar dados sobre o texto')
+        }
+    }
+    //aqui colocamos sem o (), pq se colocarmos assim, o JS entende que é para ele pegar o resultado das funções 
+    //porém no caso citado, queremos apenas utilizar as funções no meio da outra função
+    var callbackSucesso = function(titulo, historia){
+        document.write('<h1>'+titulo+'</h1>')
+        document.write('<p>'+historia+'</p>')
+    }
+    var callbackErro = function(erro){
+        document.write('<p><b>Erro:</b>' + erro+ '</p>')
+    }
+    exibeTexto(1,callbackSucesso, callbackErro)
+</script>
+<body>
+    
+</body>
+</html>

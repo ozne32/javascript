@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diferença dias   
+    </title>
+</head>
+<script>
+        //é importante lembrar que os meses começam em 0 e vão até 11
+    var data = new Date(2024, 7,30)
+    var data1 = new Date(2024,8,30)
+    document.write(data1.getTime(),'<br>')
+    var diferenca_milissegundos_data =Math.abs(data.getTime() - data1.getTime())
+    /*cada dia tem 24 horas, cada hora tem 60 min, cada min tem 60 segundos e cada segundo tem 1000 milisegundos*/
+    var dia_em_mili = (24*60*60*1000)
+    var dias = diferenca_milissegundos_data/dia_em_mili
+    document.write('foram: <br>', dias)
+</script>
+<body>
+    
+</body>
+</html>

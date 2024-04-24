@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca Cor</title>
+</head>
+<script>
+    function mudaCor(cor){
+        document.getElementById('quadrado').style.backgroundColor = cor //áo ínves de colocar background-color
+        //em javascript, coloca-se em camelCase
+    }
+</script>
+<body>
+    <h1>Coloque a cor</h1>
+    <hr>
+    <button type="button" onclick = "mudaCor('red')">Vermelho</button>
+    <button type="button" onclick = "mudaCor('green')">Verde</button>
+    <button type="button" onclick = "mudaCor('blue')">Azul</button> <!--tem que colocar primeiro as aspas duplas depois as simples-->
+    <div id="quadrado" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+</body>
+</html>
