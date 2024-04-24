@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada com while</title>
+</head>
+<script>
+    var x=1
+    while(x<=10){
+        var y=1 // tem que reinicializar dnv, pq ele tem que fazer isso outras vezes
+        //aí se eu não colocar isso o y vai continuar como 10 e vai pular o loop
+        //só executando só uma vez
+        while(y<=10){
+            document.write(x+'x'+y+'='+x*y + '<br>')
+            y++
+        }
+        document.write('<hr>')
+        x++
+    }
+</script>
+<body>
+    
+</body>
+</html>
