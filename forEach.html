@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo</title>
+</head>
+<script>
+    //forEach, recebe um callback que tem 3 parametros sendo eles (indica,valor, lista)
+    //aqui vou criar um exemplo para demonstrar como eu posso usar esta função para dimimuir
+    //uma função pela metade somando um de seus números mais o precessor  
+    var numeros=[1,2,3,4,12,32]
+    numeros.forEach(function(indice, valor, array){
+        if (indice<=4){
+            document.write(array[indice] + array[indice+1] +'<br>')
+        }
+    })
+</script>
+<body>
+    
+</body>
+</html>
