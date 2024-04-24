@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções variáveis</title>
+</head>
+<script>
+    //try = tente fazer isso ;catch = pega o erro e trata ele; finally = se ferrar tudo aparece a mensagemzinha
+    // e o throw que é jogar
+    // dentro do catch ele recebe uma variável que retorna o erro como uma string
+    // o throw, fala --> o código deu pau(mensagem bonitinha)
+    var filmes = Array()
+    filmes[1] =Array()
+    filmes[1]['nome'] = 'o menino do pijama listrado'
+    filmes[1]['categoria'] = 'drama'
+    function pegaVideo(filmes){
+        try{
+            console.log(filmes[0])
+        }catch{
+            console.log('tratando o erro')
+            throw new Error('a aplicação quebrou, mas estamos trabalhando para ela voltar')
+        }finally{
+            console.log('deu erro mas tá tudo certo')
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>
