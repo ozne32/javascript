@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo</title>
+</head>
+<script>
+    //quando for uma lista com letras, o método sort funciona perfeitamente, porém quando tiver apenas números
+    //tem que ensinar o método a como se comportar.
+    var lista_numeros = [1,21,3,45,59]
+    document.write(lista_numeros.sort()) //sem o ensino sobre como se comportar
+    document.write(lista_numeros.sort())
+    function ordenaNum(a,b){
+        return a-b
+        // <0 ordenado antes de b
+        // >0 ordenado antes de a
+        // == 0 mantida
+    }
+</script>
+<body>
+    
+</body>
+</html>
