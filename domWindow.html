@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+</head>
+<script>
+    // o window.open recebe 3 parametros, podemos utilizar a documentação para ver melhor como ele é
+    // eles são, (URL, nome_janela, especificações de tamanho)
+    var janela 
+    function abrirPopUp(){
+        janela = window.open('', 'janela_google', 'width=200,height=300')
+    }
+    function FechaPopUp(){
+        janela.close()
+    }
+    
+</script>
+<body>
+    <button onclick="abrirPopUp()" type="button">Abrir</button>
+    <button onclick="FechaPopUp()" type ='button'>Fechar</button>
+    <!-- também existe o window.print() que serve para abrir o negócio de imprimir -->
+</body>
+</html>
