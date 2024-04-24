@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+</head>
+<script>
+    //clearInterval() acaba o intervalo 
+    var i = 100
+    function comecaCronometro(){
+        setInterval(cronometro,1000)
+    }
+    function cronometro(){
+        if (i>=0){
+            document.write(i +'<br>')
+            i--
+        }
+    }
+    
+</script>
+<body>
+    <button onclick="comecaCronometro()" type="button">Clique aqui para começar o timer</button>
+</body>
+</html>
