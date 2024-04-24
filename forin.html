@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo</title>
+</head>
+<script>
+    //o loop for in recupera os índices de uma lista, retornando-os. Independentemente do índice
+    var pessoas = Array('coisa1','coisa2','coisa3')
+    var desenhos = Array()
+    desenhos['youtube'] = 'gumball'
+    desenhos[123] ='hora de aventura'
+    desenhos[true] = 'apenas um show'
+    console.log(desenhos)
+    console.log(pessoas)
+    document.write('essa é a lista de pessoas <br>')
+    for(var x in pessoas){
+        document.write(x+'<br>')
+    }
+    document.write('<hr>')
+    document.write('essa é a lista de desenhos <br>')
+    for(var x in desenhos){
+        document.write(x+'<br>')
+    }
+</script>
+<body>
+    
+</body>
+</html>
